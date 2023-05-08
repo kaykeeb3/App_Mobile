@@ -1,0 +1,58 @@
+
+.containerLivro {
+  display: flex;
+  width: auto;
+  margin-left: 18px;
+  margin-bottom: 30px;
+}
+.livro {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid #2AB572;
+  border-radius: 20px;
+  width: 260.92px;
+  max-width: 260.92px;
+  padding-top: 15px;
+  padding-bottom: 13px;
+  background-color: white;
+}
+.info {
+  width: 240px;
+  max-width: 240px;
+}
+.livroTitulo {
+  font-size: 15px;
+  font-family: "Inter";
+  font-weight: 600;
+}
+.livroAutor {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 15px;
+  font-family: "Inter";
+  font-weight: 400;
+}
+.livro p {
+  margin-left: 13.01px;
+  text-align: left;
+}
+.livroStatus {
+  padding-top: 6px;
+  margin-left: 10px;
+  border-radius: 15px;
+  width: 64px;
+  height: 66.98px;
+  text-align: center;
+  color: white;
+  font-family: "Inter";
+}
+.availability {
+  font-weight: 700;
+  font-size: 12px;
+  color: #D9D9D9;
+}
+.livroQuant {
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 21.7px;
+  color: #DBEFE4;
+}
