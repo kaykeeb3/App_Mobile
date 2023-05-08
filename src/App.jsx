@@ -4,7 +4,7 @@ import SubHome from "./components/SubHome"
 function App() {
   return (
     <>
-    <Home />
+    {/* <Home /> */} 
     <SubHome />
     </>
   )
