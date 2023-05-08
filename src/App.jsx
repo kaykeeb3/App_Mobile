@@ -1,13 +1,16 @@
 import Home from "./components/Home"
 import SubHome from "./components/SubHome"
-/*import PageLivros from "./pages/PageLivros"*/
+import Category from "./components/Category"
 
 function App() {
   return (
     <>
-    {/* <Home /> */} 
-    <SubHome />
-   </>
+    {/* <Home /> */ }
+    { /*<SubHome />*/}
+
+    <Category />
+    
+    </>
   )
 }
 

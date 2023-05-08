@@ -17,6 +17,7 @@ export const Img = styled.img`
   margin: 24%;
   width: 280px;
   height: 267px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `;
 
 export const Text = styled.h1`
@@ -42,8 +43,10 @@ export const Infor = styled.div`
 
 export const SpanText = styled.span`
   background-color: #2AB572;
-  border-radius: 10%;
+  width: 147px;
+  border-radius: 18px;
   display: inline-block;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `;
 
 export const Circle = styled.div`
@@ -93,6 +96,4 @@ export const TextInfor = styled.h3`
   line-height: 38.4px;
   margin-left: 8px;
   margin-top: 50px;
-
-
 `;
