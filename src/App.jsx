@@ -5,9 +5,8 @@ import Category from "./components/Category"
 function App() {
   return (
     <>
-    {/* <Home /> */ }
-    { /*<SubHome />*/}
-
+    <Home /> 
+    <SubHome />
     <Category />
     
     </>

@@ -33,6 +33,10 @@ export const ContainerImg = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  &:hover {
+    filter: blur(2.5px);
+    cursor: pointer;
+  }
 `;
 
 export const Infor = styled.div`
@@ -59,6 +63,10 @@ export const Circle = styled.div`
   align-items: center;
   justify-content: center;
   margin-right: 18px;
+  &:hover {
+  filter: blur(2px);
+  cursor: pointer;
+  }
 `;
 
 export const SubCircle = styled.div`
@@ -78,6 +86,10 @@ export const CircleGreen = styled.div`
   width: 90px;
   height: 85px;
   margin-right: -90%;
+  &:hover {
+  filter: blur(2px);
+  cursor: pointer;
+  }
 `;
 
 export const Icon = styled.div`
@@ -96,4 +108,8 @@ export const TextInfor = styled.h3`
   line-height: 38.4px;
   margin-left: 8px;
   margin-top: 50px;
+  &:hover {
+    filter: blur(1.5px);
+    cursor: pointer;
+  }
 `;

@@ -27,6 +27,9 @@ export const Search = styled.form`
  display: flex;
  margin-top: 30px;
  justify-content: center;
+ &:hover {
+   opacity: 80%;
+  }
 `;
 
 export const SearchBox = styled.div`
@@ -60,6 +63,10 @@ export const Icon = styled.div`
   color: #000;
   font-weight: 400;
   margin-left: 5px;
+  &:hover {
+    filter: blur(2.5px);
+    cursor: pointer;
+  }
 `;
 
 export const IconCategory = styled.div`
@@ -104,11 +111,11 @@ export const TitleText = styled.h3`
 export const IconeText = styled.div`
   width: 120px;
   &:hover {
-  filter: blur(2px);
-  cursor: pointer;
-  /*border: 1px solid #000;*/
-  border-radius: 10%;
-  height: 100px;
+    filter: blur(2px);
+    cursor: pointer;
+    /*border: 1px solid #000;*/
+    border-radius: 10%;
+    height: 100px;
 }
 `;
 
