@@ -1,5 +1,9 @@
 import  styled  from 'styled-components'
 
+export const Container = styled.div`
+  width: 100vw;
+`;
+
 export const HeaderGreen = styled.header`
   background-color: #2AB572;
   width: 100%;
@@ -11,6 +15,11 @@ export const HeaderYellow = styled.header`
   width: 100%;
   height: 4%;
 `;
+
+export const Color = styled.div`
+  width: 100vw;
+`;
+
 
 export const Img = styled.img`
   border-radius: 100%;
@@ -113,3 +122,5 @@ export const TextInfor = styled.h3`
     cursor: pointer;
   }
 `;
+
+

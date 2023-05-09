@@ -11,7 +11,9 @@ import {
     Text, 
     Icon, 
     CircleGreen, 
-    TextInfor
+    TextInfor,
+    Container,
+    Color
   } from "./styled"
 
 import { FiArrowRight } from 'react-icons/fi'
@@ -19,13 +21,13 @@ import { FiArrowRight } from 'react-icons/fi'
 
 const SubHome = () => {
   return (
-    <div>
+    <Container>
        <HeaderGreen>
-      <h1>⠀</h1>
+      <Color>⠀</Color>
     </HeaderGreen>
 
     <HeaderYellow>
-      <h1>⠀</h1>
+      <Color>⠀</Color>
     </HeaderYellow>
       <ContainerImg>
         <Img src={Logo} />
@@ -50,7 +52,7 @@ const SubHome = () => {
       <TextInfor>
          Deslize para a direita para começar
       </TextInfor>
-    </div>
+    </Container>
   )
 } 
 

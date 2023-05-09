@@ -1,21 +1,21 @@
-import { SubLoading, HeaderGreen, HeaderYellow, Img, Loading } from "./styled"
+import { SubLoading, HeaderGreen, HeaderYellow, Img, Loading, Color, Container } from "./styled"
 import  Logo  from "../../assets/logo.png"
 
 const Home = () => {
   return (
-    <div>
+    <Container>
     <HeaderGreen>
-      <h1>⠀</h1>
+      <Color>⠀</Color>
     </HeaderGreen>
 
     <HeaderYellow>
-      <h1>⠀</h1>
+      <Color>⠀</Color>
     </HeaderYellow>
       <Img src={Logo}/>
       <SubLoading>
        <a href="#"><Loading /></a>
       </SubLoading>
-    </div>
+    </Container>
   
 
   )

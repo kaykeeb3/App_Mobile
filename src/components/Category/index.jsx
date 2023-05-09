@@ -13,7 +13,9 @@ import {
     TitleText,
     IconeText,
     Line,
-    Title
+    Title,
+    Container,
+    Color
   } from './styled'
 import { AiOutlineSearch } from 'react-icons/ai'
 import { BsFillPersonPlusFill, BsFillBookFill} from 'react-icons/bs'
@@ -23,13 +25,13 @@ import { CgProfile } from 'react-icons/cg'
 
 function Category() {
   return (
-    <div>      
+    <Container>      
       <HeaderGreen>
-      <h1>⠀</h1>
+      <Color>⠀</Color>
     </HeaderGreen>
 
     <HeaderYellow>
-      <h1>⠀</h1>
+      <Color>⠀</Color>
     </HeaderYellow>
 
     <Text>
@@ -138,7 +140,7 @@ function Category() {
     </Title>
 
 
-    </div>
+    </Container>
   )
 }
 

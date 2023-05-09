@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+  width: 100vw;
+`;
+
 
 export const HeaderGreen = styled.header`
   background-color: #2AB572;
@@ -12,6 +16,11 @@ export const HeaderYellow = styled.header`
   width: 100%;
   height: 4%;
 `;
+
+export const Color = styled.div`
+  width: 100vw;
+`;
+
 
 export const Text = styled.h1`
   font-family: Bebas Neue;
@@ -39,7 +48,7 @@ export const SearchBox = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  border: 1px solid #000;
+  box-shadow: 0px 1px 4px 4px rgba(0, 0, 0, 0.25);
 `;
 
 export const Input = styled.input`
