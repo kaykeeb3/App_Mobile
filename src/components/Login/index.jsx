@@ -43,7 +43,7 @@ function Login() {
         </ContainerInput>
         <ContainerInput>
           <InputPassword 
-            type="passoword"
+            type="password"
             placeholder="Senha*" 
             required
           />
