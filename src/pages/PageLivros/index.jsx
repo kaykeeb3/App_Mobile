@@ -1,6 +1,5 @@
 import React from "react"
-import "./styles/pageLivros.css"
-import { HeaderGreen, HeaderYellow, Header } from "./styles/pageLivrosStyled"
+import { HeaderGreen, HeaderYellow, Header, ImgBack, Title, BtnFilter, ImgFilter, DivForm, Section } from "./styles/pageLivrosStyled"
 import SearchForm from "../../components/SearchForm/SearchForm.jsx"
 import CardLivro from "../../components/CardLivro/CardLivro.jsx"
 import IconBack from "../../assets/Sistema_-_SIBI__6_-removebg-preview.png"
@@ -8,29 +7,40 @@ import IconFilter from "../../assets/Sistema_-_SIBI__9_-removebg-preview.png"
 
 const PageLivros = () => {
   
+  /*function verificaPropriedade(props) {
+    React.Children.map(props.children, (child) => {
+      if (child.props.quant < 1) {
+        setBackgroundColor('red');
+      }
+      if (child.props.quant === 1) {
+        setBackgroundColor('yellow');
+      }
+    });
+  }*/
+  
   return (
     <main>
     <HeaderGreen />
     <HeaderYellow />
     
     <Header>
-    <a className="btnBack">
-    <img src={IconBack}/>
+    <a>
+    <ImgBack src={IconBack}/>
     </a>
-     <h1 className="titlePage">LIVROS</h1>
-    <button className="btnFilter">
-    <img src={IconFilter}/>
-    </button>
+     <Title>LIVROS</Title>
+    <BtnFilter>
+    <ImgFilter src={IconFilter}/>
+    </BtnFilter>
     </Header>
     
-    <div className="divForm">
+    <DivForm>
       <SearchForm />
-    </div>
-    <div className="section">
+    </DivForm>
+    <Section>
       <CardLivro
         titulo="Dom Casmurro"
         autor="Machado de Assis"
-        quant="2"
+        quant="0"
       />
       <CardLivro 
         titulo="As Crônicas de Nárnia"
@@ -47,8 +57,7 @@ const PageLivros = () => {
         autor="Napoleon Hill"
         quant="3"
       />
-    </div>
-    
+    </Section>
     </main>
  )
 }

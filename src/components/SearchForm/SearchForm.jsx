@@ -1,17 +1,17 @@
 import React from "react"
+import { FormSearch, BtnSearch, Img, InputSearch } from './styles/SearchFormStyled.jsx'
 import IconSearch from "../../assets/Sistema_-_SIBI-removebg-preview.png"
-import "./styles/SearchForm.css"
 
 const SearchForm = () => {
     return (
       
-    <form className="searchForm">
-      <button className="btnSearch">
-      <img src={IconSearch} 
+    <FormSearch>
+      <BtnSearch>
+      <Img src={IconSearch} 
       alt="Icon pesquisar"/>
-      </button>
-      <input className="inputSearch" type="text" placeholder="Pesquisar..." />
-    </form>
+      </BtnSearch>
+      <InputSearch type="text" placeholder="Pesquisar..." />
+    </FormSearch>
     
   )
 }
