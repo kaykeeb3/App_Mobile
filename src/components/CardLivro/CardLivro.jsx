@@ -1,41 +1,35 @@
 import React, { useState } from "react"
-import "./styles/CardLivro.css"
+import { ContainerLivro, Livro, Info, LivroTitulo, LivroAutor, LivroStatus, Availability, LivroQuant } from './styles/CardLivroStyled.jsx'
 
 const CardLivro = (props) => {
   const { titulo, autor, quant } = props;
   const [backgroundColor, setBackgroundColor] = useState('#2AB572');
-  /*
-  const updateBackgroundColor = () => {
-    if (quant) {
-      setBackgroundColor('red');
-    }
-    if (quant == 1) {
-      setBackgroundColor('yellow');
-    }
-  }*/
+  
+  
   
   return (
-    <div className="containerLivro">
-      <div className="livro">
-        <div className="info">
-          <p className="livroTitulo">
+    <>
+    <ContainerLivro>
+      <Livro>
+        <Info>
+          <LivroTitulo>
           {titulo}
-          </p>
-          <p className="livroAutor">
+          </LivroTitulo>
+          <LivroAutor>
           {autor}
-          </p>
-        </div>
-      </div>
-      <div className="livroStatus" style={{ backgroundColor }}>
-        <p className="availability">
+          </LivroAutor>
+        </Info>
+      </Livro>
+      <LivroStatus style={{ backgroundColor }}>
+        <Availability>
           Disponível
-        </p>
-        <p className="livroQuant">
-        {quant}
-        </p>
-      </div>
-    </div>
-    
+        </Availability>
+        <LivroQuant>
+        {props.quant}
+        </LivroQuant>
+      </LivroStatus>
+    </ContainerLivro>
+    </>
   )
 }
 
