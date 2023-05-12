@@ -25,7 +25,7 @@ function Request() {
       <HeaderYellow>
         <Color>⠀</Color>
       </HeaderYellow>
-     I
+
     <Link href='#'>
     <Icon 
       as={AiOutlineArrowLeft} 
