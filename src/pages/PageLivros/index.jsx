@@ -1,9 +1,9 @@
 import React from "react"
-import { HeaderGreen, HeaderYellow, Header, ImgBack, Title, BtnFilter, ImgFilter, DivForm, Section } from "./styles/pageLivrosStyled"
+import { Main, HeaderGreen, HeaderYellow, Header, ImgBack, Title, DivForm, Section } from "./styles/pageLivrosStyled"
 import SearchForm from "../../components/SearchForm/SearchForm.jsx"
 import CardLivro from "../../components/CardLivro/CardLivro.jsx"
+import MenuLivro from "../../components/MenuLivro/MenuLivro.jsx"
 import IconBack from "../../assets/Sistema_-_SIBI__6_-removebg-preview.png"
-import IconFilter from "../../assets/Sistema_-_SIBI__9_-removebg-preview.png"
 
 const PageLivros = () => {
   
@@ -19,18 +19,17 @@ const PageLivros = () => {
   }*/
   
   return (
-    <main>
+    <Main>
     <HeaderGreen />
     <HeaderYellow />
     
     <Header>
-    <a>
+    <a href="#">
     <ImgBack src={IconBack}/>
     </a>
      <Title>LIVROS</Title>
-    <BtnFilter>
-    <ImgFilter src={IconFilter}/>
-    </BtnFilter>
+    <MenuLivro />
+    
     </Header>
     
     <DivForm>
@@ -40,7 +39,7 @@ const PageLivros = () => {
       <CardLivro
         titulo="Dom Casmurro"
         autor="Machado de Assis"
-        quant="0"
+        quant={0}
       />
       <CardLivro 
         titulo="As Crônicas de Nárnia"
@@ -55,10 +54,30 @@ const PageLivros = () => {
       <CardLivro 
         titulo="Mais Esperto que o Diabo"
         autor="Napoleon Hill"
-        quant="3"
+        quant={3}
+      />
+      <CardLivro 
+        titulo="O Pequeno Príncipe"
+        autor="Napoleon Hill"
+        quant={3}
+      />
+      <CardLivro 
+        titulo="O Pequeno Príncipe"
+        autor="Napoleon Hill"
+        quant={3}
+      />
+      <CardLivro 
+        titulo="O Pequeno Príncipe"
+        autor="Napoleon Hill"
+        quant={3}
+      />
+      <CardLivro 
+        titulo="O Pequeno Príncipe"
+        autor="Napoleon Hill"
+        quant={3}
       />
     </Section>
-    </main>
+    </Main>
  )
 }
 

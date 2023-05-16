@@ -1,5 +1,8 @@
 import styled from 'styled-components'
 
+export const Main = styled.main`
+  padding-bottom: 18px;
+`;
 export const HeaderGreen = styled.header`
   background-color: #2AB572;
   width: 100%;
@@ -11,10 +14,12 @@ export const HeaderYellow = styled.header`
   height: 20px;
 `;
 export const Header = styled.div`
-  margin-top: 30px;
+  position: fixed;
+  margin-top: 34px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 `;
 export const ImgBack = styled.img`
   width: 44px;
@@ -26,20 +31,12 @@ export const Title = styled.h1`
   font-weight: 400;
   line-height: 38.4px;
 `;
-export const BtnFilter = styled.button`
-  border: none;
-  background: none;
-`;
-export const ImgFilter = styled.img`
-  width: 52.35px;
-  height: 29.4px;
-`;
 export const DivForm = styled.div`
+  margin-top: 112px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0px 18px 0px 18px;
-  margin-top: 60px;
 `;
 export const Section = styled.section`
   display: flex;
