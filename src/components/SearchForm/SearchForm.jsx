@@ -10,7 +10,7 @@ const SearchForm = () => {
       <Img src={IconSearch} 
       alt="Icon pesquisar"/>
       </BtnSearch>
-      <InputSearch type="text" placeholder="Pesquisar..." />
+      <InputSearch type="search" placeholder="Pesquisar..." />
     </FormSearch>
     
   )
