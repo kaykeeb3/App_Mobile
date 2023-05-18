@@ -4,6 +4,8 @@ import Category from "./components/Category";
 import Login from "./components/Login";
 import Request from "./components/Request";
 import EditProfile from "./components/editProfile";
+import PageRequest from "./pages/PageRequests"
+import PageLivros from "./pages/PageLivros"
 
 /*import PageLivros from "./pages/PageLivros"*/
 
@@ -16,6 +18,9 @@ function App() {
       <Category />
       <Request />
       <EditProfile />
+      <PageRequest />
+      <PageLivros />
+
     </>
   );
 }
