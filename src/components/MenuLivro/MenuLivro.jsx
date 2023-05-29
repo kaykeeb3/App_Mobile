@@ -12,9 +12,6 @@ const MenuLivro = () => {
   return (
     <>
     <Div>
-    <BtnFilter onClick={toggleMenu}>
-    <ImgFilter src={IconFilter}/>
-    </BtnFilter>
     {isOpen && (
     <Ul>
     <Li>Todos</Li>
@@ -27,12 +24,10 @@ const MenuLivro = () => {
     <Li>Conto</Li>
     <Li>Poesia</Li>
     </Ul>
-    /*<div>
-         <option value="Todos">TODOS</option> 
-         <option value="Romance">Romance</option> 
-         <option value="Aventura">Aventura</option>
-     </div>*/
     )}
+    <BtnFilter onClick={toggleMenu}>
+    <ImgFilter src={IconFilter}/>
+    </BtnFilter>
     </Div>
     </>
   )
