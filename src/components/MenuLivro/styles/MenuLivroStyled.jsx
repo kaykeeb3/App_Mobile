@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const Div = styled.div`
+  display: flex;
   height: 29.4px;
 `;
 export const BtnFilter = styled.button`
@@ -12,8 +13,9 @@ export const ImgFilter = styled.img`
   height: 29.4px;
 `;
 export const Ul = styled.ul`
-  float: left;
+  position: relative;
   list-style: none;
+  border-radius: 4px;
   text-align: center;
   font-family: Inter;
   font-size: 11px;

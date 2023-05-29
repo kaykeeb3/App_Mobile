@@ -7,8 +7,6 @@ import EditProfile from "./components/editProfile";
 import PageRequest from "./pages/PageRequests"
 import PageLivros from "./pages/PageLivros"
 
-/*import PageLivros from "./pages/PageLivros"*/
-
 function App() {
   return (
     <>
@@ -20,7 +18,6 @@ function App() {
       <EditProfile />
       <PageRequest />
       <PageLivros />
-
     </>
   );
 }

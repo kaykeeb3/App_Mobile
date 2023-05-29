@@ -14,7 +14,7 @@ export const HeaderYellow = styled.header`
   height: 20px;
 `;
 export const Header = styled.div`
-  position: fixed;
+  position: relative;
   margin-top: 34px;
   display: flex;
   justify-content: space-between;
@@ -26,13 +26,18 @@ export const ImgBack = styled.img`
   height: 24.71px;
 `;
 export const Title = styled.h1`
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-family: "Bebas Neue";
   font-size: 32px;
   font-weight: 400;
   line-height: 38.4px;
 `;
 export const DivForm = styled.div`
-  margin-top: 112px;
+  margin-top: 80px;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,22 +1,27 @@
-import React, { useState } from "react"
 import { ContainerLivro, Livro, Info, LivroTitulo, LivroAutor, LivroStatus, Availability, LivroQuant } from './styles/CardLivroStyled.jsx'
 
 const CardLivro = (props) => {
-  const { titulo, autor, quant } = props;
-  const [backgroundColor, setBackgroundColor] = useState('#2AB572');
-  
-  
-  
+ 
+ let backgroundColor;
+
+  if (props.quant === 0) {
+    backgroundColor = '#FF3131';
+  } else if (props.quant === 1) {
+    backgroundColor = '#FFBA00';
+  } else {
+    backgroundColor = '#2AB572';
+  }
+ 
   return (
     <>
     <ContainerLivro>
       <Livro>
         <Info>
           <LivroTitulo>
-          {titulo}
+          {props.titulo}
           </LivroTitulo>
           <LivroAutor>
-          {autor}
+          {props.autor}
           </LivroAutor>
         </Info>
       </Livro>
